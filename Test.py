@@ -1,2 +1,2 @@
-message = 'Learning to code'
+message = 'Home machine Synced Folder'
 print(message)
