@@ -3,8 +3,8 @@ import pyodbc
 import pandas as pd
 from UNPW import UN, PW
 
-server = 'netstar-ssasgl' 
-database = 'Reports' 
+server = '' 
+database = '' 
 username = UN
 password = PW
 
@@ -13,7 +13,7 @@ cursor = cnxn.cursor()
 
 exportdataset = pd.read_sql_query("""
 select top 2 *
-from [Reports].[dbo].[Mystar]
+from [Reports].[dbo].[]
 """, cnxn)
 
 exportdataset.to_excel(f'Exported_Data_FROM_{server}_{database}_Col_{exportdataset.shape[1]}_Row_{exportdataset.shape[0]}.xlsx', 
