@@ -1,0 +1,75 @@
+
+
+li + a {
+    border: 6px, dashed, purple;
+}
+
+ol li {
+    border: 3px, dashed, red
+}
+/*
+selected tag{
+    property: Value
+}
+*/
+
+body{
+    background-color: gray;
+}
+
+
+
+
+span{
+    color: red;
+}
+
+/* for ids we use the # */
+#singled_out{
+    color: aqua;
+    text-decoration: underline;
+}
+
+/* for classes we use the . */
+.first_div{
+    color: rgb(252, 255, 47);
+    text-decoration: underline
+}
+
+
+
+/* 
+Need to dive into all the CSS selectors and get an idea 
+of the most used and best practice for CSS structures / code */
+
+h1 {
+    color:rgb(44, 204, 44)
+}
+
+h3 + ol{
+    background-color: rgba(215, 218, 71, 0.562);
+    border-color: black;    
+    border-width: thin;
+    border-style: dashed;
+}
+
+#KG{
+    background-color: rgba(110, 148, 252, 0.562);
+    border-color: black;
+    border-width: thin;
+    border-style: dashed;
+}
+
+h3 + ul{
+    background-color: rgb(6, 255, 234);
+    border-color: black;    
+    border-width: thin;
+    border-style: dashed;
+}
+
+li a{
+    background-color: rgb(14, 255, 6);
+    border-color: rgb(233, 40, 40);    
+    border-width: thin;
+    border-style: dashed;
+}
