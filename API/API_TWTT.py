@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = '0542406d58c610dc304291ea6cc19e21'
+API_KEY = '0292844a18cc37b386097c0921b41c63'
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
 # city = input('Enter your city"s name: ')
@@ -15,6 +15,8 @@ response = requests.get(request_url)
 if response.status_code == 200:
     data = response.json()
     # print(data)
+    name = data['name']
+    print(name)
     weather = data['weather'][0]['description']
     print(weather)
     temp = data['main']['temp'] - 273.15
