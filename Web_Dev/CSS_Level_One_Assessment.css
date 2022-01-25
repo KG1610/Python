@@ -31,7 +31,7 @@ h2 {
 /*Task # 4
 Make all input boxes have a 2px solid dark red border (use rgb for this)*/
 
-.loginform {
+input {
     background-color: rgba(110, 148, 252, 0.562);
     border-color: rgb(250, 5, 5);
     border-width: 6px;
@@ -67,7 +67,7 @@ There is a textarea element with the id=textblock, give it the following propert
 
 /*Task # 7
 There is a link to Google on the page. Make this link red.*/
-a [href="http://www.google.com"] {
+a  {
     color: red;
 }
 
@@ -76,14 +76,26 @@ a [href="http://www.google.com"] {
 Make elements with the id="itemone" have an overline text-decoration.
 and be the color purple.*/
 
+#itemone{
+    text-decoration: overline;
+    color: purple;
+}
+
 
 /*Task # 9
 Finally, make the elements with the class label "exit" have
 a background of blue and a 4px dashed yellow border.*/
 
-
+.exit{
+    background-color: blue;
+    border: yellow, 4px, dashed
+}
 
 /*BONUS CHALLENGE: Task 10
 There is a link to Google on the page in the list.
 Can you figure out how to change the color if you click on the link?
 (Hint: Google "css visited") */
+
+a:visited {
+    color: blue;
+}
