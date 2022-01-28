@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    font-family: 'Oxanium', cursive;
+}
+
+.art{
+    margin:auto;
+    border-style: solid;
+    border-color: rgb(211, 209, 209);
+    border-width: 1px;
+
+}
+
+td{
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: white;
+    border-width: 30px;
+}
+
+#one{
+    background-color: rgb(94, 121, 172);
+}
+
+#two{
+    background-color: rgb(13, 13, 99);
+}
+
+#three{
+    background-color: blueviolet;
+}
+
+#four{
+    background-color: rgb(99, 201, 226);
+}
+
+#five{
+    background-color: rgb(28, 250, 231);
+}
+
+
+#second_row{
+    background-color: rgb(28, 250, 231);
+}
+
+
+tr{
+    margin:auto;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+}
