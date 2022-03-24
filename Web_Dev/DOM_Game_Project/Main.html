@@ -8,14 +8,36 @@
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="Game.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <div class="Container">
-        <div class="jumbotron">
-            <H1>Welcome to Tic tac Toe</H1>
-            <p>Get ready to play!!! Test your Might</p>
-            <button type="button" class="btn btn-primary btn-lg">Restart Game</button>
+        <div class="jumbotron" align="center">
+            <H1>Tic Tac Toe</H1>
+            <p>Ready To Play?  Test your Might!</p>
+            <p>'MOOOOOOOOORRRRRRRRRRRRRRRTTTTTTALLLLLLLLLLL KKKKOOOOOOOOMMMMMMBBBBBAAAAAAAAAAAAAAAAT'</p>
+            <button id="b" type="button" class="btn btn-primary btn-lg">Clear Board</button>
+        </div>  
+        <table align="center">
+            <tr>
+                <td>x</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div align="center" class="lower">
+        <button id='Random_Button' type="button" class="btn btn-secondary btn-lg">Click Here for ranomised choice</button>
         </div>
     </div>
 
