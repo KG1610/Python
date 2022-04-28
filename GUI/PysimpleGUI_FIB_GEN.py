@@ -1,3 +1,4 @@
+from cgitb import text
 from optparse import Values
 import PySimpleGUI as sg
 
@@ -9,11 +10,15 @@ theme_list = ['Black', 'BlueMono', 'BluePurple', 'BrightColors', 'BrownBlue', 'D
 'LightBrown13', 'LightBrown2', 'LightBrown3', 'LightBrown4', 'LightBrown5', 'LightBrown6', 'LightBrown7', 'LightBrown8', 'LightBrown9', 'LightGray1', 'LightGreen', 'LightGreen1', 'LightGreen10', 'LightGreen2', 'LightGreen3', 'LightGreen4', 'LightGreen5', 'LightGreen6', 'LightGreen7', 'LightGreen8', 'LightGreen9', 'LightGrey', 'LightGrey1', 'LightGrey2', 'LightGrey3', 'LightGrey4', 'LightGrey5', 'LightGrey6', 'LightPurple', 'LightTeal', 'LightYellow', 'Material1', 'Material2', 'NeutralBlue', 'Purple', 'Python', 'Reddit', 'Reds', 'SandyBeach', 'SystemDefault', 'SystemDefault1', 'SystemDefaultForReal', 'Tan', 'TanBlue', 'TealMono', 'Topanga']
 
 layout = [
-        [sg.Text('Show:'), sg.Combo(["All Values", "Result"], key = "drop_down")],
-        [sg.Text('Enter the Fib sequence you would like to see')],
-        [sg.Input("", key = "Fib_Input"), sg.Button("Calculate", key = "-Calculate_Button-")],
-        [sg.Combo(theme_list)],
-        [sg.Button("Update_Theme")]
+        [sg.Text('Result: '), sg.Text(' ')],
+        [sg.Text('Sequence: '), sg.Text(' ')],
+        #[sg.Text(' ')]
+        [sg.Text('Enter the Fib Iteration you would like to see')],
+        [sg.Input("", key = "Fib_Input", text_color="Grey")],
+        [sg.Button("Calculate", key = "-Calculate_Button-")],
+        [sg.HorizontalSeparator()],
+        [sg.Text('Theme Selector')],
+        [[sg.Combo(theme_list, key = "Combo_Theme")], sg.Button("Update Theme")]
         #sg.Cancel()]
     ]
 
@@ -45,14 +50,10 @@ while True:
         break
     if event == "-Calculate_Button-":
         print(values)
-        #print(values["drop_down"])
-        #print(values["Fib_Input"])
-
-        drop_down_Value = values["drop_down"]
-        fib_seq = values["Fib_Input"]
+        
 
         # if fib_seq.isnumeric():
-        #     print(drop_down_Value, fib_seq)
+        #    print(drop_down_Value, fib_seq)
         # if drop_down_Value == "All Values":
         #      fib(fib_seq, 1)
         # if drop_down_Value == "Result":
